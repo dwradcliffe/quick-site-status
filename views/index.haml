@@ -1,0 +1,9 @@
+%ul
+  - @sites.each do |s|
+    %li
+      %a{:title => "title", :href => s.to_s}
+        = s.to_s
+      %span =
+      %span{:class => s.class}
+        = s.status.to_s
+
